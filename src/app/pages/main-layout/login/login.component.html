@@ -1,0 +1,27 @@
+<div class="parent">
+    <div class="container" onclick="onclick">
+        <div class="top"></div>
+        <div class="bottom"></div>
+        <div class="center">
+            <h2>LogIn</h2>
+            <form >             
+                <!-- <div class="col form-floating">
+                    <input type="text" id="UserName" name="UserName" [(ngModel)]="loginObj.userName"
+                        formControlName="UserName" placeholder="UserName" class="form-control" required />
+                    <label for="UserName">User Name</label>
+                </div>
+                <div class="col form-floating">
+                    <input type="password" id="password" name="password" [(ngModel)]="loginObj.password"
+                        formControlName="password" placeholder="password" class="form-control" required />
+                    <label for="password">Password</label>
+                </div>    -->
+                <input type="text" name="userName" [(ngModel)]="loginObj.userName" placeholder="UserName" required/>
+                <input type="password" name="password" [(ngModel)]="loginObj.password" placeholder="Password" required/>
+                <br/>
+                <button class="btn-login" (click)="onLogin()">Login</button>
+            </form>
+          
+        </div>
+      </div>
+
+</div>

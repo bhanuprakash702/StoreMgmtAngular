@@ -1,0 +1,16 @@
+hr{
+    width: 90%;
+}
+input,label,button{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.col{
+    align-self: center;
+}
+table {
+    width: 100%;
+  }
+  

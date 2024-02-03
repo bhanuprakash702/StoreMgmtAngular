@@ -1,0 +1,44 @@
+<!-- Top Navbar comes here--- -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-tops">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+    aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" >
+    <h2><a class="nav-link" routerLink="group"><i class='bx bx-home-smile' ></i> Inventory Mgmt</a></h2 >
+  </div>
+  <div class="collapse navbar-collapse">
+    <a class="nav-link" routerLink="group"><i class='bx bxs-dashboard'></i> Dashboard</a>
+    <a class="nav-link" routerLink="group"><i class='bx bx-message-square-add'></i> Groups</a>
+    <a class="nav-link" routerLink="subGroup">SubGroup</a>
+    <a class="nav-link" routerLink="Customer">Customer</a>
+    <div class="dropdown">
+      <button class="dropbtn">Dropdown 
+      </button>
+      <div class="dropdown-content">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+      </div>
+    </div> 
+  </div>
+  <div class="Logout">
+    <a  (click)="onLogout()"><img class="Logout-logo" src="../../../../assets/Logout-logo.svg"></a>
+  </div>
+</nav>
+
+<!-- SideMenu and Content page here -->
+<div class="outlet">
+  <div class="container fixed-button">
+    <div class="row">
+      <!-- <div class="col" style="background-color: antiquewhite;">
+              <a class="nav-link" routerLink="group">Groups</a>
+              <a class="nav-link" routerLink="subGroup">SubGroup</a>
+              <a class="nav-link disabled" href="#">Disabled</a>      
+      </div> -->
+      <div class="col">
+        <router-outlet class="main-content"></router-outlet>
+      </div>
+    </div>
+  </div>
+</div>
