@@ -14,6 +14,7 @@ import { CustomerComponent } from './pages/users/customer/customer.component';
 import {MatPaginatorModule } from  '@angular/material/paginator';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { AgGridTableComponent } from './shared/ag-grid-table/ag-grid-table.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     SubGroupMasterComponent,
     LoginComponent,
     LayoutComponent,
-    CustomerComponent
+    CustomerComponent,
+    AgGridTableComponent
   ],
   imports: [
     BrowserModule,
